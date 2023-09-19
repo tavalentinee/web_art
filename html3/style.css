@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+}
+
+.Clooooud {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20vw;
+    color: rgb(217, 255, 0);
+    mix-blend-mode: exclusion;
+    text-shadow: 3px 3px red;
+    border: 20px dotted rgb(255, 0, 60);
+}
+
+.frog {
+    width: 400px;
+    height: 800px;
+    object-fit: cover;
+    object-position: -300px;
+}
+
+.clouds {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    object-fit: cover;
+    height: 100vh;
+    object-position: top left;
+}
+
+.corner-message {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 1rem;
+    color: aquamarine;
+    padding: 2em;
+    font-size: 2rem;
+    box-shadow: -20px 20px 10px yellowgreen;
+}
