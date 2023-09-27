@@ -12,4 +12,42 @@
     top: 50%;
     left: 50%;
     margin: auto;
+    display: block;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+.fire {
+    right: 0;
+    position: absolute;
+    height: 55px;
+}
+
+.image-container {
+    overflow: hidden;
+    width: auto;
+    max-width: auto;
+    height: auto;
+    margin: 50px auto;
+    border: 1px solid #000000;
+    cursor: grab;
+}
+
+.endless {
+    display: block;
+    width: 100%;
+    transform-origin: top left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.endless:hover {
+    transform: scale(1.5);
+}
+
+.starnight {
+    left: 50%;
+    top: 50%;
+    display: block;
+        margin-left: auto;
+        margin-right: auto;
 }
