@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: aquamarine;
+    padding: 1rem;
+    border: .5rem solid pink;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem 4rem;
+    background-color: black;
+    color: white;
+}
+
+header > * {
+    outline: 2px solid pink;
+}
+
+.logo {
+    font-size: 2rem;
+    font-family: Arial;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: azure;
+    padding: .25rem;
+}
+
+.top-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 2rem;
+    text-decoration: none;
+}
+
+.top-menu a {
+    text-decoration: none;
+    transition: color .5s;
+}
+
+.top-menu a:hover {
+    color: blue;
+}
+
+main {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.page-title {
+    text-align: center;
+    padding: 4rem;
+    background-image: url(//picsum.photos/id/492/600/400);
+}
+
+.flex-container {
+    border: 2px solid salmon;
+}
+
+img {
+    display: block;
+}
+
+.gallary {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.gallary img {
+    width: 100%;
+}
+
+/* .gallary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+} */
+
+/* .gallary img {
+    width: min(300px, 100%);
+    flex-grow: 1;
+} */

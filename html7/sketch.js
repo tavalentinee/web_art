@@ -1,17 +1,15 @@
 function setup() {
-    createCanvas(innerWidth,innerHeight)
-
-    background('rgb(100%,0%,10%)')
-    rectmode(center)
+    createCanvas(windowWidth, windowHeight);
+    rectMode(CENTER)
 }
 
 function draw() {
-    background(0, 200, 100)
+    //background(0, 200, 100)
     let red = map(mouseX, 0, width, 0, 255)
-    fill(255, 0, 0)
+    fill(183, 255, 10)
     //noFill()
-    strokeWeight(2)
-    stroke(mouseX, mouseY, 255)
+    strokeWeight(8)
+    stroke(0, mouseY, mouseY)
     rect(mouseX, mouseY, mouseX, mouseY);
     //text("hhey", mouseX, mouseY)
 }
